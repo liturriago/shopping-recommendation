@@ -1,0 +1,15 @@
+# Machine Learning Core
+torch
+transformers<4.40.0
+pillow
+
+# API & Server
+fastapi
+uvicorn
+pydantic
+
+# Database
+opensearch-py
+
+# Utils
+python-dotenv
