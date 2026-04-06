@@ -27,7 +27,7 @@ graph TD
     OS -->|Top K Results| API
     API -->|JSON Response| User
 
-    S3[(S3 Data Lake)] -->|Ingest| Notebook1[Ingestion Notebook]
+    Ingest[(Ingestion Notebook)] -->|S3| S3[Data Lake]
     Notebook1 -->|Bronze Layer| S3
     S3 -->|Inference| Notebook2[Embeddings Generator]
     Notebook2 -->|Silver Layer| S3
